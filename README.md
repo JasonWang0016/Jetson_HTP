@@ -18,4 +18,5 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c too
 ```bash
 sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c  bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit-super internal
 ```
-
+You will then notice that the command line window begins to display the burning progress and return check information. If you have used the SDK manager before, you will find many similarities in the process. Please note that this method does not support parallel installation of other compatible toolkits (such as opencv and pytorch). You may need to manually install these tools after powering on the device.  
+之后你会发现在命令行窗口中开始显示烧录的进度和返回的check信息，如果你使用过SDK manager，你会发现很多过程上的相似性，需要注意的是，该方法不支持并行安装兼容的其他工具包（例如opencv和pytorch），您可能需要在上电开机后手动安装这些工具。
