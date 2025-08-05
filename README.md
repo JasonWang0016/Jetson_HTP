@@ -20,3 +20,27 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c too
 ```
 You will then notice that the command line window begins to display the burning progress and return check information. If you have used the SDK manager before, you will find many similarities in the process. Please note that this method does not support parallel installation of other compatible toolkits (such as opencv and pytorch). You may need to manually install these tools after powering on the device.  
 之后你会发现在命令行窗口中开始显示烧录的进度和返回的check信息，如果你使用过SDK manager，你会发现很多过程上的相似性，需要注意的是，该方法不支持并行安装兼容的其他工具包（例如opencv和pytorch），您可能需要在上电开机后手动安装这些工具。
+## Installing jtop
+jtop is a system monitoring tool for NVIDIA Jetson devices, similar to htop or nvidia-smi, but optimized for the Jetson platform. It can display real-time information such as CPU/GPU usage, memory usage, temperature, power consumption, JetPack version, etc., making it ideal for developers to debug and optimize the performance of Jetson devices.  
+jtop是一个用于 ​​NVIDIA Jetson​​ 设备的系统监控工具，类似于 htop或 nvidia-smi，但专为 Jetson 平台优化。它可以实时显示 ​​CPU/GPU 使用率​​、​​内存占用​​、​​温度​​、​​功耗​​、​​JetPack 版本​​等信息，非常适合开发者调试和优化 Jetson 设备性能。  
+You can use
+```bash
+sudo pip install jetson-stats
+```
+to install jtop, then enter
+```bash
+jtop
+```
+in the terminal to run jtop.  
+你可以使用
+```bash
+sudo pip install jetson-stats
+```
+来安装jtop，随后在终端中输入
+```bash
+jtop
+```
+就可以运行jtop。
+## Compiling and installing OpenCV
+At this point, we have completed the flashing of the firmware with super mode. Since the project involves image acquisition, we need to install a compatible opencv package.  
+此时我们已经完成了带有super模式固件的烧录，由于项目涉及到图像的获取，我们需要安装兼容的opencv包，
