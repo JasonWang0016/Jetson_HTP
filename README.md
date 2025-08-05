@@ -16,3 +16,8 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c too
 '''  
 My Jetson kit uses an M.2 solid-state drive for storage. I strongly recommend using the SDK manager image burning tool provided by Nvidia to burn the initial image. After installing the SDK manager, simply locate the .conf file containing the word “super” in the `nvidia/nvidia_sdk/XXX_Linux_for_Tegra` directory on the Linux host computer, and then run the following command in that directory.  
 'sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p “-c  bootloader/generic/cfg/flash_t234_qspi.xml” --showlogs --network usb0 jetson-orin-nano-devkit-super internal'
+```bash
+git clone https://github.com/user/repo.git
+cd repo
+npm install
+```
