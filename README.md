@@ -42,5 +42,15 @@ jtop
 ```
 就可以运行jtop。
 ## Compiling and installing OpenCV
-At this point, we have completed the flashing of the firmware with super mode. Since the project involves image acquisition, we need to install a compatible opencv package.  
-此时我们已经完成了带有super模式固件的烧录，由于项目涉及到图像的获取，我们需要安装兼容的opencv包，
+At this point, we have completed the flashing of the super mode firmware. Since the project involves image acquisition, we need to install a compatible opencv package. First, uninstall the original opencv package (if already installed).
+```bash
+sudo apt purge *libopencv*  
+sudo apt autoremove  
+sudo apt update
+```  
+此时我们已经完成了带有super模式固件的烧录，由于项目涉及到图像的获取，我们需要安装兼容的opencv包，首先，卸载原装的opencv包（如果已经安装的话）
+```bash
+sudo apt purge *libopencv*  
+sudo apt autoremove  
+sudo apt update
+```
