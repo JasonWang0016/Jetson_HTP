@@ -54,3 +54,17 @@ sudo apt purge *libopencv*
 sudo apt autoremove  
 sudo apt update
 ```
+After that, you need to install the libraries required for compilation.
+```bash
+sudo apt install -y build-essential cmake git libgtk2.0-dev pkg-config \
+libavcodec-dev libavformat-dev libswscale-dev libgstreamer1.0-dev \
+libgstreamer-plugins-base1.0-dev python3-dev python3-numpy libtbb2 \
+libtbb-dev libjpeg-dev libpng-dev libtiff-dev libv4l-dev v4l-utils curl
+```  
+之后需要安装编译需要的库
+```bash
+sudo apt install -y build-essential cmake git libgtk2.0-dev pkg-config \
+libavcodec-dev libavformat-dev libswscale-dev libgstreamer1.0-dev \
+libgstreamer-plugins-base1.0-dev python3-dev python3-numpy libtbb2 \
+libtbb-dev libjpeg-dev libpng-dev libtiff-dev libv4l-dev v4l-utils curl
+```
